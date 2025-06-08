@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENNIS BOMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <img class="logo" src="tennis-bomb.svg" alt="Magazine Logo" onclick="redirectTo('home.html')">
+                <!-- Burger Menu Icon -->
+                <button class="burger-menu">
+                    <img src="menu-burger.svg" alt="Menu Icon">
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="menu">
+                    <ul class="nav-links">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="rankings.html">RANKINGS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <img src="search.svg" alt="Search Icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <H1 id="ranking-title">First 10 Players in the ATP/WTA Rankings</H1>
+    <div class="selection">
+        <div class="group">
+        <label for="tour">Tour:</label>
+        <select id="tour">
+            <option value="ATP">ATP</option>
+            <option value="WTA">WTA</option>
+        </select>
+    </div>
+
+        <div class="group">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="Singles">Singles</option>
+            <option value="Doubles">Doubles</option>
+        </select>
+    </div>
+    </div>
+
+    <div id="table1" class="table">
+        <h3>ATP - Singles</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Photos</th>
+                    <th>Ranking</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Sinner_MCM23_(8)_(52883593853)_(cropped).jpg"><img
+                                width="256" alt="Sinner MCM23 (8) (52883593853) (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Sinner_MCM23_%288%29_%2852883593853%29_%28cropped%29.jpg/256px-Sinner_MCM23_%288%29_%2852883593853%29_%28cropped%29.jpg?20240623204146"></a>
+                    </td>
+                    <td class="ranking">1</td>
+                    <td>Jannik Sinner</td>
+                    <td>11,830</td>
+                    <td>ITA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Keith Allison from Hanover, MD, USA, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Alexander_Zverev_(42068440390).jpg"><img
+                                width="256" alt="Alexander Zverev in City Open Finals, 2018"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Alexander_Zverev_%2842068440390%29.jpg/256px-Alexander_Zverev_%2842068440390%29.jpg?20180807000648"></a>
+                    </td>
+                    <td class="ranking">2</td>
+                    <td>Alexander Zverev</td>
+                    <td>7,915</td>
+                    <td>GER</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Carlos_Alcaraz_(ESP)_2022.jpg"><img
+                                width="256" alt="Carlos Alcaraz (ESP) 2022"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Carlos_Alcaraz_%28ESP%29_2022.jpg/256px-Carlos_Alcaraz_%28ESP%29_2022.jpg?20220912032236"></a>
+                    </td>
+                    <td class="ranking">3</td>
+                    <td>Carlos Alcaraz</td>
+                    <td>7,010</td>
+                    <td>ESP</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Rickmunroe01, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Taylor_Fritz_-_Delray_Beach_Open_Final_Round.jpg"><img
+                                width="256" alt="Taylor Fritz - Delray Beach Open Final Round"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Taylor_Fritz_-_Delray_Beach_Open_Final_Round.jpg/256px-Taylor_Fritz_-_Delray_Beach_Open_Final_Round.jpg?20240313040329"></a>
+                    </td>
+                    <td class="ranking">4</td>
+                    <td>Taylor Fritz</td>
+                    <td>5,100</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="CORNUT, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:DaniilMedvedevSS19shooting.jpg"><img
+                                width="256" alt="DaniilMedvedevSS19shooting"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/DaniilMedvedevSS19shooting.jpg/256px-DaniilMedvedevSS19shooting.jpg?20190905134531"></a>
+                    </td>
+                    <td class="ranking">5</td>
+                    <td>Daniil Medvedev</td>
+                    <td>5,030</td>
+                    <td>RUS</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a title="Shev123, CC0, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Casper_Ruud_French_Open_Qual_2017.jpg"><img
+                                width="256" alt="Casper Ruud French Open Qual 2017"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Casper_Ruud_French_Open_Qual_2017.jpg/256px-Casper_Ruud_French_Open_Qual_2017.jpg?20170526231234"></a>
+                    </td>
+                    <td class="ranking">6</td>
+                    <td>Casper Ruud</td>
+                    <td>4,255</td>
+                    <td>NOR</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Djokovic_MCM23_(5)_(52883600048)_(cropped).jpg"><img
+                                width="256" alt="Djokovic MCM23 (5) (52883600048) (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Djokovic_MCM23_%285%29_%2852883600048%29_%28cropped%29.jpg/256px-Djokovic_MCM23_%285%29_%2852883600048%29_%28cropped%29.jpg?20230821135417"></a>
+                    </td>
+                    <td class="ranking">7</td>
+                    <td>Novak Djokovic</td>
+                    <td>3,910</td>
+                    <td>SRB</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Hameltion, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Andrey_Rublev_(2023_US_Open)_02_(cropped).jpg"><img
+                                width="256" alt="Andrey Rublev (2023 US Open) 02 (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Andrey_Rublev_%282023_US_Open%29_02_%28cropped%29.jpg/256px-Andrey_Rublev_%282023_US_Open%29_02_%28cropped%29.jpg?20240519194944"></a>
+                    </td>
+                    <td class="ranking">8</td>
+                    <td>Andrey Rublev</td>
+                    <td>3,760</td>
+                    <td>RUS</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:De_Minaur_RG19_(23)_(48199315646).jpg"><img
+                                width="256" alt="De Minaur RG19 (23) (48199315646)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/De_Minaur_RG19_%2823%29_%2848199315646%29.jpg/256px-De_Minaur_RG19_%2823%29_%2848199315646%29.jpg?20190705061549"></a>
+                    </td>
+                    <td class="ranking">9</td>
+                    <td>Alex de Minaur</td>
+                    <td>3,745</td>
+                    <td>AUS</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Carine06 from UK, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Grigor_Dimitrov_(27438764420)_(cropped).jpg"><img
+                                width="256" alt="Grigor Dimitrov (27438764420) (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Grigor_Dimitrov_%2827438764420%29_%28cropped%29.jpg/256px-Grigor_Dimitrov_%2827438764420%29_%28cropped%29.jpg?20240209134327"></a>
+                    </td>
+                    <td class="ranking">10</td>
+                    <td>Grigor Dimitrov</td>
+                    <td>3,350</td>
+                    <td>BUL</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="table2" class="table">
+        <h3>WTA - Singles</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Photos</th>
+                    <th>Ranking</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Sabalenka_WM18_(3)_(30063199288).jpg"><img
+                                width="256" alt="Sabalenka WM18 (3) (30063199288)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Sabalenka_WM18_%283%29_%2830063199288%29.jpg/256px-Sabalenka_WM18_%283%29_%2830063199288%29.jpg?20230128125231"></a>
+                    </td>
+                    <td class="ranking">1</td>
+                    <td>Aryna Sabalenka</td>
+                    <td>9,416</td>
+                    <td>RUS</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Carine06 from UK, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Iga_Swiatek_(50498824617).jpg"><img
+                                width="256" alt="Iga Swiatek (50498824617)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Iga_Swiatek_%2850498824617%29.jpg/256px-Iga_Swiatek_%2850498824617%29.jpg?20210607210558"></a>
+                    </td>
+                    <td class="ranking">2</td>
+                    <td>Iga Swiatek</td>
+                    <td>8,370</td>
+                    <td>POL</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Gauff_WMQ19_(24).jpg"><img width="256"
+                                alt="Cori Gauff"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Gauff_WMQ19_%2824%29.jpg/256px-Gauff_WMQ19_%2824%29.jpg?20190717110039"></a>
+                    </td>
+                    <td class="ranking">3</td>
+                    <td>Coco Gauff</td>
+                    <td>6,530</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Paolini_WMQ18_(19)_(29680586438).jpg"><img
+                                width="256" alt="Paolini WMQ18 (19) (29680586438)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Paolini_WMQ18_%2819%29_%2829680586438%29.jpg/256px-Paolini_WMQ18_%2819%29_%2829680586438%29.jpg?20180722114509"></a>
+                    </td>
+                    <td class="ranking">4</td>
+                    <td>Jasmine Paolini</td>
+                    <td>5,344</td>
+                    <td>ITA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Hameltion, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Zheng_Qinwen_(2023_US_Open)_01_(cropped).jpg"><img
+                                width="256" alt="Zheng Qinwen (2023 US Open) 01 (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Zheng_Qinwen_%282023_US_Open%29_01_%28cropped%29.jpg/256px-Zheng_Qinwen_%282023_US_Open%29_01_%28cropped%29.jpg?20231011165923"></a>
+                    </td>
+                    <td class="ranking">5</td>
+                    <td>Qinwen Zheng</td>
+                    <td>5,340</td>
+                    <td>CHN</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a title="Ocoudis, CC0, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Elena_Rybakina_US_Open_2024_(cropped).jpg"><img
+                                width="256" alt="Elena Rybakina US Open 2024 (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Elena_Rybakina_US_Open_2024_%28cropped%29.jpg/256px-Elena_Rybakina_US_Open_2024_%28cropped%29.jpg?20240924013302"></a>
+                    </td>
+                    <td class="ranking">6</td>
+                    <td>Elena Rybakina</td>
+                    <td>5,171</td>
+                    <td>KAZ</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Pegula_RG19_(23)_(48199119221).jpg"><img
+                                width="256" alt="Pegula RG19 (23) (48199119221)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Pegula_RG19_%2823%29_%2848199119221%29.jpg/256px-Pegula_RG19_%2823%29_%2848199119221%29.jpg?20190704200815"></a>
+                    </td>
+                    <td class="ranking">7</td>
+                    <td>Jessica Pegula</td>
+                    <td>4,705</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Hameltion, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Emma_Navarro_(2023_US_Open)_01.jpg"><img
+                                width="256" alt="Emma Navarro (2023 US Open) 01"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Emma_Navarro_%282023_US_Open%29_01.jpg/256px-Emma_Navarro_%282023_US_Open%29_01.jpg?20240312043311"></a>
+                    </td>
+                    <td class="ranking">8</td>
+                    <td>Emma Navarro</td>
+                    <td>3,589</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a title="Steven Mills, Public domain, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Daria_Kasatkina_2.jpg"><img width="256"
+                                alt="Daria Kasatkina 2"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Daria_Kasatkina_2.jpg/256px-Daria_Kasatkina_2.jpg?20170603165926"></a>
+                    </td>
+                    <td class="ranking">9</td>
+                    <td>Daria Kasatkina</td>
+                    <td>3,368</td>
+                    <td>RUS</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Krejcikova_RG15_(13)_(19119995950).jpg"><img
+                                width="256" alt="Krejcikova RG15 (13) (19119995950)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Krejcikova_RG15_%2813%29_%2819119995950%29.jpg/256px-Krejcikova_RG15_%2813%29_%2819119995950%29.jpg?20150701055604"></a>
+                    </td>
+                    <td class="ranking">10</td>
+                    <td>Barbora Krejcikova</td>
+                    <td>3,214</td>
+                    <td>CZE</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="table3" class="table">
+        <h3>ATP - Doubles</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Photos</th>
+                    <th>Ranking</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Pavic_MCM22_(14)_(52036931315).jpg"><img
+                                width="256" alt="Pavic MCM22 (14) (52036931315)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Pavic_MCM22_%2814%29_%2852036931315%29.jpg/256px-Pavic_MCM22_%2814%29_%2852036931315%29.jpg?20220501185738"></a>
+                    </td>
+                    <td class="ranking">1</td>
+                    <td>Mate Pavic</td>
+                    <td>7,510</td>
+                    <td>CRO</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Arevalo_WMQ16_(10)_(28133946721).jpg"><img
+                                width="256" alt="Arevalo WMQ16 (10) (28133946721)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Arevalo_WMQ16_%2810%29_%2828133946721%29.jpg/256px-Arevalo_WMQ16_%2810%29_%2828133946721%29.jpg?20160710164514"></a>
+                    </td>
+                    <td class="ranking">1</td>
+                    <td>Marcelo Arevalo-Gonzalez</td>
+                    <td>7,510</td>
+                    <td>SLV</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Carine06 from UK, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Jordan_Thompson_(35400092831).jpg"><img
+                                width="256" alt="Jordan Thompson (35400092831)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jordan_Thompson_%2835400092831%29.jpg/256px-Jordan_Thompson_%2835400092831%29.jpg?20170705183903"></a>
+                    </td>
+                    <td class="ranking">3</td>
+                    <td>Jordan Thompson</td>
+                    <td>6,655</td>
+                    <td>AUS</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Carine06 from UK, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Marcel_Granollers_(24422861216).jpg"><img
+                                width="256" alt="Marcel Granollers (24422861216)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Marcel_Granollers_%2824422861216%29.jpg/256px-Marcel_Granollers_%2824422861216%29.jpg?20161112064529"></a>
+                    </td>
+                    <td class="ranking">4</td>
+                    <td>Marcel Granollers</td>
+                    <td>6,500</td>
+                    <td>ESP</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Zeballos_US16_(28)_(29862614985).jpg"><img
+                                width="256" alt="Zeballos US16 (28) (29862614985)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Zeballos_US16_%2828%29_%2829862614985%29.jpg/256px-Zeballos_US16_%2828%29_%2829862614985%29.jpg?20161004043700"></a>
+                    </td>
+                    <td class="ranking">4</td>
+                    <td>Horacio Zeballos</td>
+                    <td>6,500</td>
+                    <td>ARG</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Mektic_WM17_(30)_(35379342983).jpg"><img
+                                width="256" alt="Mektic WM17 (30) (35379342983)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mektic_WM17_%2830%29_%2835379342983%29.jpg/256px-Mektic_WM17_%2830%29_%2835379342983%29.jpg?20170727065812"></a>
+                    </td>
+                    <td class="ranking">6</td>
+                    <td>Nikola Mektic</td>
+                    <td>5,930</td>
+                    <td>CRO</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Krawietz_RG21_(11)_(51376395558).jpg"><img
+                                width="256" alt="Krawietz RG21 (11) (51376395558)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Krawietz_RG21_%2811%29_%2851376395558%29.jpg/256px-Krawietz_RG21_%2811%29_%2851376395558%29.jpg?20210814084503"></a>
+                    </td>
+                    <td class="ranking">7</td>
+                    <td>Kevin Krawietz</td>
+                    <td>5,880</td>
+                    <td>GER</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Koolhof_US16_(17)_(29827725516).jpg"><img
+                                width="256" alt="Koolhof US16 (17) (29827725516)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Koolhof_US16_%2817%29_%2829827725516%29.jpg/256px-Koolhof_US16_%2817%29_%2829827725516%29.jpg?20161004042149"></a>
+                    </td>
+                    <td class="ranking">8</td>
+                    <td>Wesley Koolhof</td>
+                    <td>5,840</td>
+                    <td>NED</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Vavassori_WMQ23_(53062168673).jpg"><img
+                                width="256" alt="Vavassori WMQ23 (53062168673)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Vavassori_WMQ23_%2853062168673%29.jpg/256px-Vavassori_WMQ23_%2853062168673%29.jpg?20230723155528"></a>
+                    </td>
+                    <td class="ranking">9</td>
+                    <td>Andrea Vavassori</td>
+                    <td>5,840</td>
+                    <td>ITA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Puetz_WM14_(2)_(14643086732).jpg"><img
+                                width="256" alt="Puetz WM14 (2) (14643086732)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Puetz_WM14_%282%29_%2814643086732%29.jpg/256px-Puetz_WM14_%282%29_%2814643086732%29.jpg?20140713162223"></a>
+                    </td>
+                    <td class="ranking">10</td>
+                    <td>Tim Puetz</td>
+                    <td>5,790</td>
+                    <td>GER</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="table4" class="table">
+        <h3>WTA - Doubles</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Photos</th>
+                    <th>Ranking</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Nationality</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="photo"><a
+                            title="Hameltion, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Kate%C5%99ina_Siniakov%C3%A1_(2023_US_Open)_01_(cropped2).jpg"><img
+                                width="256" alt="Kateřina Siniaková (2023 US Open) 01 (cropped2)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kate%C5%99ina_Siniakov%C3%A1_%282023_US_Open%29_01_%28cropped2%29.jpg/256px-Kate%C5%99ina_Siniakov%C3%A1_%282023_US_Open%29_01_%28cropped2%29.jpg?20231016194719"></a>
+                    </td>
+                    <td class="ranking">1</td>
+                    <td>Katerina Siniakova</td>
+                    <td>8,165</td>
+                    <td>CZE</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Routliffe_RG22_(24)_(52144071693)_(cropped).jpg"><img
+                                width="256" alt="Routliffe RG22 (24) (52144071693) (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Routliffe_RG22_%2824%29_%2852144071693%29_%28cropped%29.jpg/256px-Routliffe_RG22_%2824%29_%2852144071693%29_%28cropped%29.jpg?20220724154219"></a>
+                    </td>
+                    <td class="ranking">2</td>
+                    <td>Erin Routliffe</td>
+                    <td>8,370</td>
+                    <td>NZL</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Dabrowski_RG19_(48)_(48199313486).jpg"><img
+                                width="256" alt="Dabrowski RG19 (48) (48199313486)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Dabrowski_RG19_%2848%29_%2848199313486%29.jpg/256px-Dabrowski_RG19_%2848%29_%2848199313486%29.jpg?20190705061457"></a>
+                    </td>
+                    <td class="ranking">3</td>
+                    <td>Gabriela Dabrowski</td>
+                    <td>6,805</td>
+                    <td>CAN</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Kichenok_L._RG19_(44)_(48199182982).jpg"><img
+                                width="256" alt="Kichenok L. RG19 (44) (48199182982)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Kichenok_L._RG19_%2844%29_%2848199182982%29.jpg/256px-Kichenok_L._RG19_%2844%29_%2848199182982%29.jpg?20190704201319"></a>
+                    </td>
+                    <td class="ranking">4</td>
+                    <td>Lyudmyla Kichenok</td>
+                    <td>6,165</td>
+                    <td>UKR</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Townsend_RG19_(29)_(48199067157)_(cropped).jpg"><img
+                                width="256" alt="Townsend RG19 (29) (48199067157) (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Townsend_RG19_%2829%29_%2848199067157%29_%28cropped%29.jpg/256px-Townsend_RG19_%2829%29_%2848199067157%29_%28cropped%29.jpg?20220915093338"></a>
+                    </td>
+                    <td class="ranking">5</td>
+                    <td>Taylor Townsend/td>
+                    <td>6,108</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Carine06 from UK, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Jelena_Ostapenko_(34970618791).jpg"><img
+                                width="256" alt="Jelena Ostapenko (34970618791)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Jelena_Ostapenko_%2834970618791%29.jpg/256px-Jelena_Ostapenko_%2834970618791%29.jpg?20170610154905"></a>
+                    </td>
+                    <td class="ranking">6</td>
+                    <td>Jelena Ostapenko</td>
+                    <td>5,948</td>
+                    <td>LAT</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Hsieh_WM19_(22)_(48521999377).jpg"><img
+                                width="256" alt="Hsieh WM19 (22) (48521999377)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hsieh_WM19_%2822%29_%2848521999377%29.jpg/256px-Hsieh_WM19_%2822%29_%2848521999377%29.jpg?20190813084143"></a>
+                    </td>
+                    <td class="ranking">7</td>
+                    <td>Su-Wei Hsieh</td>
+                    <td>5,506</td>
+                    <td>TPE</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="Hameltion, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Elise_Mertens_(2023_US_Open)_09.jpg"><img
+                                width="256" alt="Elise Mertens (2023 US Open) 09"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Elise_Mertens_%282023_US_Open%29_09.jpg/256px-Elise_Mertens_%282023_US_Open%29_09.jpg?20230906171922"></a>
+                    </td>
+                    <td class="ranking">8</td>
+                    <td>Elise Mertens</td>
+                    <td>5,430</td>
+                    <td>BEL</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Errani_WMQ22_(14)_(52190176812)_(cropped).jpg"><img
+                                width="256" alt="Errani WMQ22 (14) (52190176812) (cropped)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Errani_WMQ22_%2814%29_%2852190176812%29_%28cropped%29.jpg/256px-Errani_WMQ22_%2814%29_%2852190176812%29_%28cropped%29.jpg?20220710213957"></a>
+                    </td>
+                    <td class="ranking">9</td>
+                    <td>Sara Errani</td>
+                    <td>5,306</td>
+                    <td>ITA</td>
+                </tr>
+                <tr>
+                    <td class="photo"><a
+                            title="si.robi, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+                            href="https://commons.wikimedia.org/wiki/File:Paolini_WMQ18_(19)_(29680586438).jpg"><img
+                                width="256" alt="Paolini WMQ18 (19) (29680586438)"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Paolini_WMQ18_%2819%29_%2829680586438%29.jpg/256px-Paolini_WMQ18_%2819%29_%2829680586438%29.jpg?20180722114509"></a>
+                    </td>
+                    <td class="ranking">10</td>
+                    <td>Jasmine Paolini</td>
+                    <td>5,235</td>
+                    <td>ITA</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-nav-bar">
+        <ul class="footer-nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="rankings.html">RANKINGS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="credits.html">CREDITS</a></li>
+        </ul>
+        <p>© 2024 All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="selection.js">
+    </script>
+</body>
+
+</html>

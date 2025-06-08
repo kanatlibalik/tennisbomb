@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENNIS BOMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <img class="logo" src="tennis-bomb.svg" alt="Magazine Logo" onclick="redirectTo('home.html')">
+                <!-- Burger Menu Icon -->
+                <button class="burger-menu">
+                    <img src="menu-burger.svg" alt="Menu Icon">
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="menu">
+                    <ul class="nav-links">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="rankings.html">RANKINGS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <img src="search.svg" alt="Search Icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="top-news">
+            <article>
+                <div class="top-news-figure">
+                    <figure><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Andy_Murray_and_Rafael_Nadal_Japan_Open_2011.jpg"
+alt="Andy Murray - Rafael Nadal">
+                        <div class="bottom-right">COACHING</div>
+                    </figure>
+                </div>
+                <div class="top-news-content">
+                <h2 class="subtitle"> Andy Murray Joins Novak Djokovic’s Team
+                    as Coach for 2025 Australian Open
+                </h2>
+                <div class="details">
+                    <span class="regular">By Associated Press </span>
+                    <span class="regular-italic">Published Nov 23, 2024</span>
+                </div>
+                <p>In a surprising twist, retired tennis star Andy Murray will join Novak Djokovic as his coach for the upcoming Australian Open in January 2025. The announcement, shared by both players on social media, marks a new chapter in the relationship between two of tennis’s most iconic rivals.
+                    <br>
+                    <br>
+                    Djokovic, a 24-time Grand Slam champion, and Murray, a three-time major winner, have faced off 36 times in their professional careers, with Djokovic holding a 25-11 lead. Their rivalry dates back to their junior years and spans over two decades, with some of the sport’s most memorable matches played between them.
+                    <br>
+                    <br>
+                    “We played each other since we were boys—25 years of being rivals, of pushing each other beyond our limits,” Djokovic wrote in his announcement. “I thought our story may be over. Turns out, it has one final chapter. Welcome on board, Coach—Andy Murray.”
+                    <br>
+                    <br>
+                    The partnership comes after Djokovic concluded a challenging 2024 season, during which he didn’t win a Grand Slam but claimed a significant gold medal in singles at the Paris Summer Olympics. Without a full-time coach since his March split with Goran Ivanisevic, Djokovic aims to use Murray’s expertise to prepare for the Australian Open, where he has historically excelled, defeating Murray in four finals (2011, 2013, 2015, and 2016).
+                    <br>
+                    <br>
+                    Murray, who retired from professional tennis following the Paris Olympics, expressed his enthusiasm for the new role. “I’m really excited for it and looking forward to spending time on the same side of the net as Novak for a change, helping him to achieve his goals,” he said through a statement.
+                    <br>
+                    <br>
+                    Their storied rivalry includes significant moments for both players, such as Murray’s breakthrough 2012 US Open victory and his historic 2013 Wimbledon win, which made him the first British man in 77 years to claim the singles title at the All England Club.
+                    <br>
+                    <br>
+                    The 2025 Australian Open, set to begin on January 12, promises to be a compelling stage for this unprecedented collaboration.
+                </p>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav-bar">
+            <ul class="footer-nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="rankings.html">RANKINGS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="credits.html">CREDITS</a></li>
+            </ul>
+            <p>© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+function redirectTo(url) {
+  window.location.href = url;
+}
+
+let burgerMenu = document.querySelector('.burger-menu');
+let navLinks = document.querySelector('.nav-links');
+
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+document.addEventListener('click', (event) => {
+  if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+    navLinks.classList.remove('active');
+  }
+});
+    </script>
+</body>
+
+</html>

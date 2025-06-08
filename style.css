@@ -1,0 +1,732 @@
+:root {
+    --tennisgray: #353535;
+    --subgray: rgba(54, 54, 54, 0.5);
+    --tennisyellow: #D8E213;
+    --tennisgreen: #71D816;
+    --shadowgreen: rgba(113, 216, 22, .5);
+    --tenniswhite: #EFEFEF;
+}
+
+body {
+    margin: 1rem;
+    font-family: 'Tahoma';
+    background-color: var(--tenniswhite);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* HEADER - NAV */
+
+header {
+    width: 100%;
+    border-bottom: 1px solid var(--subgray);
+    position: sticky;
+    top: 0;
+    padding-top: 2rem;
+    background-color: var(--tenniswhite);
+    z-index: 100;
+}
+
+nav{
+    margin-right: 1rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.burger-menu {
+    flex: 2;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+.burger-menu img {
+    width: 30px;
+    height: auto;
+}
+
+.nav-links {
+    /* Hidden! */
+    display: none;
+
+    flex-direction: column;
+    position: absolute;
+
+    top: 38px;
+    right: 10px;
+
+    background-color: var(--tennisgray);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--subgray);
+    z-index: 10;
+}
+
+/* active = dropdpwn menu */
+.nav-links.active {
+    display: flex;
+    
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--tenniswhite);
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--tenniswhite);
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px var(--subgray);
+}
+
+.search-bar button {
+    width: 10%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--tenniswhite);
+    box-shadow: 2px 2px 5px var(--subgray);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: var(--tennisgreen);
+    color: var(--tennisgray);
+}
+
+.search-bar button img {
+    width: 20px;
+    height: auto;
+}
+
+
+/* Main[general] */
+
+main {
+    margin: 1.5rem;
+}
+
+h1,
+h2,
+text,
+p {
+    color: var(--tennisgray);
+    text-align: left;
+}
+
+h1:not([id="contact-us"]) {
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--tennisgray);
+    text-align: left;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+
+/* HOME - Top News */
+
+.top-news{
+    display: flex;
+    justify-content: center;
+}
+
+.top-news-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* ORTALAMAK ICIN BIR MUCIZE <3 */
+    margin: auto;
+}
+
+.top-news-figure>figure {
+    position: relative;
+}
+
+.top-news-figure>figure>img {
+    width: 100%;
+    height: auto;
+}
+
+.top-news-content {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.bottom-right {
+    background-color: var(--tennisgreen);
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.details {
+    margin: 0rem;
+    display: grid;
+    color: var(--tennisgray);
+}
+
+.regular {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.regular-italic {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li::marker {
+    color: var(--tennisgreen);
+    font-size: 20px;
+}
+
+
+li {
+    color: var(--tennisgray);
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+
+
+/* HOME - News */
+
+.news>div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline;
+}
+
+.news-image-small {
+    text-align: center;
+    max-width: 900px;
+    position: relative;
+    color: var(--tennisgray);
+}
+
+.news-image-small img {
+    text-align: center;
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+}
+
+.news-image-small img:hover {
+    box-shadow: 6px 6px 10px var(--tennisgray);
+    cursor: pointer;
+}
+
+.news-image-small>.bottom-left {
+    background-color: var(--tennisgreen);
+    padding: 0.5rem;
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    bottom: 5%;
+    left: 18%;
+
+}
+
+.news-text-sum>.subtitle:hover {
+    color: var(--tennisgreen);
+    cursor: pointer;
+}
+
+.news-text-sum .details{
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--tennisgray);
+}
+
+.news-text-sum a {
+    font-weight: bold;
+    color: var(--tennisgreen);
+    text-decoration: underline;
+}
+
+.news-text-sum a:hover {
+    padding: 0.1rem 0.3rem;
+    background-color: var(--shadowgreen);
+    color: var(--tennisgray);
+    box-shadow: 2px 2px 5px var(--subgray);
+    border-radius: 2px;
+}
+
+
+
+/* HOME - Tournament Schedule */
+
+.tournament {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tournament-general {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 2px 2px 5px var(--subgray);
+    margin: 0.5rem 0;
+    max-width: 600px;
+    text-align: left;
+}
+
+.tournament-logo>figure>img {
+    width: 90%;
+    height: auto;
+}
+
+.tournament-name {
+    margin-left: 1rem;
+    align-content: center;
+    justify-content: left;
+}
+
+
+
+/* HOME - Footer */
+
+footer{
+    width: 100%;
+    padding-top: 1rem;
+    background-color: var(--tenniswhite);
+    border-top: 1px solid var(--subgray);
+}
+
+.footer-nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+.footer-nav-links li {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-nav-links a {
+    text-decoration: none;
+    color: var(--tennisgray);
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-nav-links a:hover {
+    text-decoration: underline;
+    color: var(--tennisgreen);
+    padding: 0;
+}
+
+
+.footer-nav-bar p {
+    color: var(--tennisgray);
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+
+
+/* RANKINGS */
+
+#ranking-title {
+    border: 0;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.selection {
+    text-align: center;
+    margin: 1rem;
+    color: var(--tennisgray);
+}
+
+.group{
+    margin: 0.5rem;
+}
+
+main select {
+    margin: 0 20px;
+    padding: 5px;
+    border: 1px solid var(--subgray);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--tennisgray);
+}
+
+
+
+td, th {
+    word-wrap: break-word; /* Uzun kelimeleri kırarak taşmayı önler */
+    overflow: hidden; /* Taşan içerikleri gizler */
+    text-overflow: ellipsis; /* Taşan metinler için üç nokta ekler */
+}
+
+
+.table {
+        /* FOR SELECTED TABLE */
+        display: none;
+    
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px var(--subgray);
+    overflow: hidden;
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+}
+    /* FOR SELECTED TABLE */
+    .active {
+        display: block;
+}
+
+.table h3{
+    color: var(--tennisgray);
+    background-color: var(--tennisgreen);
+    padding: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 0;
+}
+
+.table table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: auto; /* İçeriğe göre sütun genişliklerini ayarlar */
+}
+
+.table thead {
+    background-color: var(--tennisgray);
+    color: var(--tennisgreen);
+    border-radius: 4px;
+}
+
+.table thead th {
+    padding: 12px;
+}
+
+.table tbody tr{
+    box-shadow: 0 2px 5px var(--shadowgreen);
+}
+
+.table tbody td {
+    padding: 1rem;
+    color: var(--tennisgray);
+}
+
+.table tbody .photo img {
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+}
+
+.table .photo a {
+    /* NON-CLICKABLE */
+    pointer-events: none;
+}
+
+.ranking{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+/* CONTACT US */
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: var(--tennisgray);
+    min-width: 400px;
+}
+
+form>label {
+    font-weight: bold;
+}
+
+form>input, form>textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Tahoma';
+}
+
+form>button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--tennisgray);
+    color: var(--tenniswhite);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form>button:hover {
+    background-color: var(--tennisgreen);
+    color: var(--tennisgray);
+}
+
+
+/* CREDITS */
+
+.credits {
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px var(--subgray);
+    max-width: 900px;
+}
+
+.credits table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.credits thead {
+    background-color: var(--tennisgray);
+    color: var(--tennisgreen);
+    border-radius: 4px;
+}
+
+.credits thead th {
+    padding: 12px;
+    word-wrap: break-word;
+}
+
+.credits tbody tr{
+    box-shadow: 0 2px 5px var(--shadowgreen);
+}
+
+.credits tbody td {
+    padding: 1rem;
+    color: var(--tennisgray);
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.credits tbody .photo img {
+    border-radius: 4px;
+    max-width: 80px;
+    height: auto;
+}
+
+.credits table .photo a{
+    pointer-events: none;
+}
+
+.credits table .author {
+    text-align: left;
+    padding: 1rem;
+    width: 120px;
+}
+
+credits table .link{
+    padding: 1rem;
+    text-align: left;
+}
+
+.credits table .link a {
+    color: var(--tennisgreen);
+    text-decoration: underline;
+}
+
+
+@media (min-width: 640px) {
+
+    /* HEADER - NAV */
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        margin: 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .nav-links a {
+        color: var(--tennisgray);
+        padding-right: 0rem;
+        margin-left: 1rem;
+    }
+
+    .nav-links a:hover {
+        color: var(--tennisgreen);
+        text-decoration: underline;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .search-bar button {
+        width: 65px;
+        height: 40.5px
+    }
+
+
+    /* HOME - Top News */
+
+    .top-news{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        max-width: 950px;;
+    }
+
+    .top-news-figure {
+        text-align: center;
+        max-width: 800px;
+    }
+
+
+    /* HOME - News */
+
+    .news>div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        max-width: 950px;
+    }
+
+    .news-image-small {
+        width: 280px;
+        height: auto;
+        margin: 0.5rem 2rem 0 0.5rem;
+    }
+
+    .news-image-small img {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-image-small>.bottom-left {
+        left: 5px;
+        bottom: 8px;
+    }
+
+    .news-text-sum {
+        width: 60%;
+    }
+
+    .news-text-sum h2 {
+        margin: 0 0 1rem 0.5rem;
+    }
+
+    .news-text-sum p {
+        margin: 0 0.5rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    /* HEADER - NAV */
+
+    header {
+        margin-top: 0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin-left: 1rem;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-end;
+    }
+}
+
+
+/* 
+word-wrap: break-word; /* Uzun kelimeleri kırarak taşmayı önler
+word-break: break-word; /* Alternatif kırma desteği
+white-space: normal; /* Metnin satır içinde taşmasını engeller
+overflow: hidden; /* Taşan içerikleri gizler
+text-overflow: ellipsis; /* Taşan metinler için üç nokta ekler 
+*/

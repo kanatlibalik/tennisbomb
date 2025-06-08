@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENNIS BOMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <img class="logo" src="tennis-bomb.svg" alt="Magazine Logo" onclick="redirectTo('home.html')">
+                <!-- Burger Menu Icon -->
+                <button class="burger-menu">
+                    <img src="menu-burger.svg" alt="Menu Icon">
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="menu">
+                    <ul class="nav-links">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="rankings.html">RANKINGS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <img src="search.svg" alt="Search Icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="top-news">
+            <article>
+                <div class="top-news-figure">
+                    <figure><img
+                        src="supliful-supplements-on-demand-ffcmO0GLM14-unsplash.jpg"
+                        alt="doping">
+                        <div class="bottom-right">ALERT</div>
+                    </figure>
+                </div>
+                <div class="top-news-content">
+                <h2 class="subtitle"> Iga Swiatek Accepts One-Month Ban After Positive Drug Test Due to Contaminated Melatonin</h2>
+                <div class="details">
+                    <span class="regular">By Associated Press </span>
+                    <span class="regular-italic">Published Nov 28, 2024</span>
+                </div>
+                <p>Five-time Grand Slam champion Iga Swiatek has been handed a one-month suspension after testing positive for trimetazidine (TMZ), a prohibited substance typically used as a heart medication. The International Tennis Integrity Agency (ITIA) announced that the violation was unintentional and likely caused by contamination in a melatonin supplement Swiatek used for jet lag.
+                    <br>
+                    <br>
+                    The ITIA concluded that Swiatek bore minimal fault, placing her case at the "lowest end of the range for no significant fault or negligence." Swiatek formally admitted to the anti-doping violation and agreed to the suspension. She had already served 12 days of a provisional ban in late September, missing the Korea Open, China Open, and Wuhan Open. With eight days of her suspension remaining, she will now serve the remainder during the off-season, clearing her to return on December 4.
+                    <br>
+                    <br>
+                    Swiatek, a 23-year-old from Poland and a former world No. 1, had a stellar year, including winning her fifth Grand Slam at the French Open and earning a bronze medal at the Paris Olympics. She also reached the semifinals of the Cincinnati Open in August but was stripped of $158,944 in prize money following the positive test.
+                    <br>
+                    <br>
+                    ITIA CEO Karen Moorhouse emphasized the strict liability of the World Anti-Doping Code, reminding athletes to be vigilant with medications and supplements. While melatonin is regulated as a medicine in Poland, it doesn’t carry the same classification worldwide, which contributed to Swiatek’s inadvertent exposure to TMZ.
+                    <br>
+                    <br>
+                    Swiatek's case follows another high-profile doping incident involving men’s world No. 1 Jannik Sinner, who was cleared of steroid allegations earlier this year. Both cases highlight the ongoing challenges of supplement contamination in professional tennis.
+                </p>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav-bar">
+            <ul class="footer-nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="rankings.html">RANKINGS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="credits.html">CREDITS</a></li>
+            </ul>
+            <p>© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+function redirectTo(url) {
+  window.location.href = url;
+}
+
+let burgerMenu = document.querySelector('.burger-menu');
+let navLinks = document.querySelector('.nav-links');
+
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+document.addEventListener('click', (event) => {
+  if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+    navLinks.classList.remove('active');
+  }
+});
+    </script>
+</body>
+
+</html>

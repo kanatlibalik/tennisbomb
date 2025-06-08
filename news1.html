@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENNIS BOMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <img class="logo" src="tennis-bomb.svg" alt="Magazine Logo" onclick="redirectTo('home.html')">
+                <!-- Burger Menu Icon -->
+                <button class="burger-menu">
+                    <img src="menu-burger.svg" alt="Menu Icon">
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="menu">
+                    <ul class="nav-links">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="rankings.html">RANKINGS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>
+                    <img src="search.svg" alt="Search Icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="top-news">
+            <article>
+                <div class="top-news-figure">
+                    <figure><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/68/Rafael_Nadal_%2812054444625%29.jpg"
+                        alt="Rafael_Nadal">
+                        <div class="bottom-right">RETIREMENT</div>
+                    </figure>
+                </div>
+                <div class="top-news-content">
+                <h2 class="subtitle">Rafael Nadal: A Legacy of Passion and Realism</h2>
+                <div class="details">
+                    <span class="regular">By Peter Bodo </span>
+                    <span class="regular-italic">Published Nov 20, 2024</span>
+                </div>
+                <p>Rafael Nadal, one of tennis’ most unconventional and legendary figures, has bid farewell to professional tennis. His illustrious career concluded at the 2024 Davis Cup Finals in Malaga, Spain, just miles from where his journey to global stardom began 20 years ago. At 18, Nadal stunned the sporting world by defeating Andy Roddick in the 2004 Davis Cup Final, laying the foundation for a career defined by unparalleled dominance and determination.
+                    <br>
+                    <br>
+                    Over two decades, Nadal amassed an astonishing 22 Grand Slam singles titles, including a record 14 French Open crowns. Yet, his decision to retire wasn’t marked by a quest for one last glorious victory. Speaking at a press conference, Nadal dismissed the notion of embarking on a farewell tour, saying, “I don’t have the ego to need that. I’m here to help the team win.” True to his selfless ethos, he focused on Spain’s chances at the Davis Cup, though his final singles match ended in defeat to the Netherlands’ Botic van de Zandschulp.
+                    <br>
+                    <br>
+                    Nadal’s career was defined not only by his physical prowess and unconventional left-handed playing style—despite being naturally right-handed—but also by his unique mental approach. A realist to the core, Nadal simplified tennis to its essence, attributing success to consistency, precision, and confidence. His practical mindset, however, was always balanced by an enduring passion for the game, even as injuries tested his resilience.
+                    <br>
+                    <br>
+                    On the court, Nadal’s relentless work ethic and humility made him a force of nature. Off the court, he remained grounded, embodying a rare blend of tenacity and grace. His legacy as a fierce competitor, a humble champion, and a passionate lover of the sport will endure, inspiring generations to come.
+                    <br>
+                    <br>
+                    As the tennis world bids farewell to this once-in-a-lifetime athlete, Nadal’s presence will be remembered as one that transcended the game, leaving an indelible mark on sports history.
+                </p>
+                </div>
+
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav-bar">
+            <ul class="footer-nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="rankings.html">RANKINGS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="credits.html">CREDITS</a></li>
+            </ul>
+            <p>© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function redirectTo(url) {
+  window.location.href = url;
+}
+
+let burgerMenu = document.querySelector('.burger-menu');
+let navLinks = document.querySelector('.nav-links');
+
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+document.addEventListener('click', (event) => {
+  if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+    navLinks.classList.remove('active');
+  }
+});
+    </script>
+</body>
+
+</html>
